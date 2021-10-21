@@ -101,3 +101,27 @@ const applyDiscountsByCategory = (arr, category, callback, discount) => {
 
 applyDiscountsByCategory(catProducts, 1, applyFlatRateDiscount, 1.00)
 console.log(catProducts)
+
+function makeSandwich(bread){
+  return function(ingredients){
+    let order = `You ordered a ${bread} bread sandwich with `
+
+    for(let i = 0; i < ingredients.length; i++){
+      if(i === ingredients.length - 1 && i !== 0){
+        order += `and ${ingredients[i]}.`
+      } else if ( ingredients.length === 1){
+        order += `${ingredients[i]}.`
+      } else {
+        order += `${ingredients[i]}, `
+      }
+    }
+    return order
+  }
+}
+
+const makeWheatSandwich = makeSandwich('wheat')
+const results = makeWheatSandwich(['pickles', 'cheese', 'ham', 'lettuce'])
+const results2 = makeWheatSandwich(['turkey', 'mayo', 'onions'])
+
+console.log(results)
+console.log(results2)
