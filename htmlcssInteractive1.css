@@ -2,21 +2,53 @@
   font-family: "Courier New", Courier, monospace;
 }
 
+body {
+  margin: 0;
+}
+
 h1 {
   background-color: teal;
-  color: peachpuff;
+  color: floralwhite;
   padding: 20px;
   margin: 0;
 }
 
+h1,
+p {
+  text-align: center;
+}
+
+p {
+  margin: 20px 200px;
+}
+
+h1 > span {
+  font-size: 16px;
+  margin: 0 50px;
+}
+
 div {
+  width: 700px;
   background-image: url(images/salonmarketing001.jpg);
   color: red;
 }
 
-p {
+img {
+  height: 225px;
+  margin: 20px;
+  border: lightseagreen solid 5px;
+}
+
+button {
+  border: none;
+  background-color: magenta;
+  color: midnightblue;
+  border-radius: 20px;
+}
+
+/* p {
   font-size: 20pt;
   border: 12px solid blue;
   padding: 4rem;
   margin: 10px;
-}
+} */
