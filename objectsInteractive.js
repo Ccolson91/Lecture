@@ -16,7 +16,7 @@ let meal = {
 
 //destructure properties
 const {dessert} = meal
-// console.log(dessert)
+console.log(dessert)
 
 //destructuring multiple values at once
 const {appetizer, entree} = meal
@@ -33,9 +33,9 @@ const {appetizer: myAppetizer, entree: myEntree, dessert: myDessert, drink: myDr
 // console.log(myDrink)
 
 //Looping over keys in an object
-// for (let key in person) {
-//   console.log(key)
-// }
+for (let key in person) {
+  console.log(key)
+}
 // for (key in person) {
   //   console.log(person[key])
   // }
