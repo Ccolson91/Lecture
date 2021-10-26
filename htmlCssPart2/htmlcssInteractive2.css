@@ -1,0 +1,30 @@
+p {
+  color: mediumvioletred;
+}
+
+div {
+  background-color: purple;
+  border: 3px dotted violet;
+}
+
+.heading {
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.content {
+  color: mediumblue;
+}
+
+#fancy {
+  color: yellow;
+}
+
+#boxybox {
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  background-color: slategray;
+}
